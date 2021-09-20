@@ -6,7 +6,7 @@ from helper import *
 
 def main():
     original_image = cv2.imread(os.path.join(os.getcwd(), str(sys.argv[1])))
-    original_message = str(sys.argv[2])
+    original_message = str(' '.join(sys.argv[2:]))
 
     ################################################################################
 
