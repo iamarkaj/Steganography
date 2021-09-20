@@ -36,6 +36,8 @@ def encode(img, msg, lsb_pos=1, flip_next=False):
 
             except:
                 return enc_img
+
+    raise ValueError(f"Maximum characters allowed is: {int((img.shape[0]*img.shape[1]*3)/8-1)}")
                 
 
 def decode(img, lsb_pos=1):
